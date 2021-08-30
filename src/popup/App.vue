@@ -82,11 +82,9 @@ $primary: #51392c;
 $secondary: #f8f3e7;
 $background: #fcf9f3;
 
-html {
-  width: 450px;
-  height: auto;
-}
+
 body {
+  width: 450px;
   font-family: "Nunito", sans-serif;
   font-weight: 600;
   background-color: $background;
