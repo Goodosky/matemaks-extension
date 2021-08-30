@@ -23,9 +23,6 @@ getData().then((data) => {
     return;
   }
 
-  // Send message to pupup
-  browser.runtime.sendMessage({ data: "data" });
-
   // Processing data
   if (url == "https://www.matemaks.pl/matematyka-matura-podstawowa-kurs.html") {
     const lessons = document.querySelectorAll(".lekcja");
