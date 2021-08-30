@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+  "name": "Matemaks extension",
+  "homepage_url": "https://github.com/Goodosky/Matemaks-Extension",
+  "description": "Wtyczka dodająca na matemaks.pl przyciski, które są ukryte za paywall'em.",
+  "permissions": ["*://www.matemaks.pl/*", "storage"],
+  "content_scripts": [
+    {
+      "matches": ["*://www.matemaks.pl/*"],
+      "js": ["js/content-script.js"]
+    }
+  ],
+  "icons": {
+    "16": "icons/16.png",
+    "48": "icons/48.png",
+    "128": "icons/128.png"
+  },
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_title": "Matemaks extension",
+    "default_icon": {
+      "19": "icons/19.png",
+      "38": "icons/38.png"
+    }
+  }
+}
