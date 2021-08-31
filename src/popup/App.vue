@@ -20,7 +20,7 @@
           <label class="btn" for="upload">Wgraj nowe dane</label>
           <input type="file" accept=".json" id="upload">
 
-          <div class="card--info" style="width: 100%;">Jeżeli coś nie działa, to najprawdopodobniej przesłałeś złe dane. <a href="#">Sprawdź skąd wziąźć dane premium</a></div>
+          <div class="card--info" style="width: 100%;">Jeżeli coś nie działa, to najprawdopodobniej przesłałeś złe dane. <a href="https://github.com/Goodosky/matemaks-extension#sk%C4%85d-wzi%C4%85%C4%87-i-jak-wgra%C4%87-dane-premium" target="_blank" rel="noopener">Sprawdź skąd wziąźć dane premium</a></div>
         </div>
         
         <div class="data" v-if="!hasData" >
