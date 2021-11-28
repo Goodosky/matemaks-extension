@@ -24,14 +24,14 @@ getData().then((data) => {
   }
 
   // Processing data
-  if (url == "https://www.matemaks.pl/matematyka-matura-podstawowa-kurs.html") {
+  if (url.includes("matematyka-matura-podstawowa-kurs.html")) {
     const lessons = document.querySelectorAll(".lekcja");
     const videoIds = data["lessons_info"]["basic_matura"];
 
     for (let i = 0; i < lessons.length; i++) {
       replaceVideoId(lessons[i], videoIds[i + 1]);
     }
-  } else if (url == "https://www.matemaks.pl/matematyka-matura-rozszerzona-kurs.html") {
+  } else if (url.includes("matematyka-matura-rozszerzona-kurs.html")) {
     const lessons = document.querySelectorAll(".lekcja");
     const videoIds = data["lessons_info"]["extended_matura"];
 
